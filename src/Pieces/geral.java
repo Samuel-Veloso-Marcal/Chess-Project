@@ -1,7 +1,5 @@
 package Pieces;
 
-import java.util.Locale;
-
 import Game.exeptions.PiecesMechanic;
 
 public class geral {
