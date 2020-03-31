@@ -86,16 +86,23 @@ public class geral {
 		this.setUp(u); this.setDown(d);
 		this.setRight(r); this.setLeft(l);
 	}
+	public void setAllNormalDirectionsTo(int n) {
+		this.setAllNormalDirections(n, n, n, n);
+	}
 	public void setAllOthersDirections(int ul, int ur, int dl, int dr) {
 		this.setDown_left(dl); this.setDown_right(dr);
 		this.setUpper_right(ur); this.setUpper_left(ul);
+	}
+	public void setAllOthersDirectionsTo(int n) {
+		this.setAllOthersDirections(n, n, n, n);
 	}
 	public void setAllDirections(int u, int d, int l, int r, int dl, int dr, int ul, int ur) {
 		this.setAllNormalDirections(u, dr, ul, ur);
 		this.setAllOthersDirections(ul, ur, dl, dr);
 	}
 	public void setAllDirectionsTo(int alt) {
-		this.setAllDirections( alt, alt, alt, alt, alt, alt, alt, alt);
+		this.setAllNormalDirectionsTo(alt);
+		this.setAllOthersDirectionsTo(alt);
 	}
 	public void setDown(int down) {
 		this.down = down;
