@@ -10,4 +10,13 @@ public class pawn extends geral{
 		}
 		this.setUp(2);
 	}
+	@Override
+	public int getUp() {
+		if (this.up == 2) {
+			int temp = this.up;
+			this.setUp(1);
+			return temp;
+		}
+		return this.up;
+	}
 }
