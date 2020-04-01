@@ -5,7 +5,7 @@ import Game.exeptions.PiecesMechanic;
 public class geral {
 	private boolean live = true;
 	private String code =  "";
-	private int up = 0;
+	protected int up = 0;
 	private int down = 0;
 	private int left = 0;
 	private int right = 0;
